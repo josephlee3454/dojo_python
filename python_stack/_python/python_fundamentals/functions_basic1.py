@@ -2,9 +2,9 @@
 
 
 
-# def a():# function a
-#     return 5# return 5 when function called 
-# print(a()) # print return value of function which is 5 
+def a():# function a
+    return 5# return 5 when function called 
+print(a()) # print return value of function which is 5 
 
 #                    var | val
 #                    __________
@@ -23,9 +23,9 @@
 # #2
 
 
-# def a(): # define function a 
-#     return 5 # return 5 when function is called
-# print(a()+a()) # print the return result for both function a's  and add them together 
+def a(): # define function a 
+    return 5 # return 5 when function is called
+print(a()+a()) # print the return result for both function a's  and add them together 
 
 #                    var | val
 #                    __________
@@ -46,10 +46,10 @@
 
 
 #3
-# def a(): # define function a
-#     return 5 # return 5 after function called
-#     return 10
-# print(a())# print the result of the function after its called wich will print the first return statement 5 
+def a(): # define function a
+    return 5 # return 5 after function called
+    return 10
+print(a())# print the result of the function after its called wich will print the first return statement 5 
 #                    var | val
 #                    __________
 #          1st  return 5 |  5
@@ -67,10 +67,10 @@
 
 
 # #4
-# def a():# define function a 
-#     return 5  # return 5 after function call 
-#     print(10) # wont print 10 since it is afte the return statement 
-# print(a()) #print the return statement which is 5 
+def a():# define function a 
+    return 5  # return 5 after function call 
+    print(10) # wont print 10 since it is afte the return statement 
+print(a()) #print the return statement which is 5 
 
 
 #                    var | val
@@ -91,10 +91,10 @@
 
 
 # #5
-# def a(): # define function a 
-#     print(5) # print 5
-# x = a()  # assign the function a to x 
-# print(x) # print the result of function  
+def a(): # define function a 
+    print(5) # print 5
+x = a()  # assign the function a to x 
+print(x) # print the result of function  
 
 
 #                    var | val
@@ -113,9 +113,9 @@
 
 
 # #6
-# def a(b,c):# define function a pass in b and c 
-#     print(b+c) # print the sume of b and c 
-# print(a(1,2) + a(2,3)) # error
+def a(b,c):# define function a pass in b and c 
+    print(b+c) # print the sume of b and c 
+print(a(1,2) + a(2,3)) # error
 
 
 #                    var | val
@@ -162,15 +162,15 @@
 
 
 # #8
-# def a(): # define function a 
-#     b = 100 # assign 100 to b 
-#     print(b) # print 100
-#     if b < 10: # if b is less than 10 
-#         return 5 # if condition above is met then return 5
-#     else:# anything else then the condition above 
-#         return 10 # return 10 if anything other than b being less than 10
-#     return 7# return statement to return 7 but wont happen becuase the return statemnet above overwrites it 
-# print(a()) # print the print statement sice above the return statement and after that print the else condition which is 10 
+def a(): # define function a 
+    b = 100 # assign 100 to b 
+    print(b) # print 100
+    if b < 10: # if b is less than 10 
+        return 5 # if condition above is met then return 5
+    else:# anything else then the condition above 
+        return 10 # return 10 if anything other than b being less than 10
+    return 7# return statement to return 7 but wont happen becuase the return statemnet above overwrites it 
+print(a()) # print the print statement sice above the return statement and after that print the else condition which is 10 
 
 
 #                    var | val
@@ -191,15 +191,15 @@
 
 
 #9
-# def a(b,c): # define function a and pass in b and c 
-#     if b<c: # if b is less thean c
-#         return 7 # return 7 if the condition is met above 
-#     else:#elses anything else 
-#         return 14 # anything else return 14
-#     return 3 # return 3 wont happen 
-# print(a(2,3))
-# print(a(5,3))
-# print(a(2,3) + a(5,3))
+def a(b,c): # define function a and pass in b and c 
+    if b<c: # if b is less thean c
+        return 7 # return 7 if the condition is met above 
+    else:#elses anything else 
+        return 14 # anything else return 14
+    return 3 # return 3 wont happen 
+print(a(2,3))
+print(a(5,3))
+print(a(2,3) + a(5,3))
 
 #                    var | val
 #                    __________
@@ -217,10 +217,10 @@
 
 
 # # #10
-# def a(b,c):  # define function a and pass in b and c 
-#     return b+c # return the sum of b and c 
-#     return 10 # return 10 but wont happen becuase the first return stement overides the second 
-# print(a(3,5)) # print 8
+def a(b,c):  # define function a and pass in b and c 
+    return b+c # return the sum of b and c 
+    return 10 # return 10 but wont happen becuase the first return stement overides the second 
+print(a(3,5)) # print 8
 
 # #                    var | val
 # #                    __________
@@ -237,14 +237,14 @@
 
 
 #11
-# b = 500 # assign b to 500
-# print(b) # print b which is 500
-# def a(): # define function a 
-#     b = 300 # reassign b to 300
-#     print(b)# print 300
-# print(b) # print 500 becuase it is not in the function 
-# a()# call function a which will print 300
-# print(b) # print 500 
+b = 500 # assign b to 500
+print(b) # print b which is 500
+def a(): # define function a 
+    b = 300 # reassign b to 300
+    print(b)# print 300
+print(b) # print 500 becuase it is not in the function 
+a()# call function a which will print 300
+print(b) # print 500 
 
 #                    var | val
 #                    __________
@@ -261,15 +261,15 @@
 
 
 #12
-# b = 500 # assign b to 500 
-# print(b) # print b whihc is 500 
-# def a(): # define function a
-#     b = 300 # assign b to 300 
-#     print(b) # print 300
-#     return b # return b which is 300 
-# print(b) # print 500 becuase thats what b is outside the function 
-# a() # call function a 
-# print(b) # print b  which is 500 because it is also out side the function 
+b = 500 # assign b to 500 
+print(b) # print b whihc is 500 
+def a(): # define function a
+    b = 300 # assign b to 300 
+    print(b) # print 300
+    return b # return b which is 300 
+print(b) # print 500 becuase thats what b is outside the function 
+a() # call function a 
+print(b) # print b  which is 500 because it is also out side the function 
 
 #                    var | val
 #                    __________
@@ -286,15 +286,15 @@
 
 
 # #13
-# b = 500 # assign b to 500
-# print(b) # print 500
-# def a(): #define function a 
-#     b = 300 # assign b to 300
-#     print(b) # print 300
-#     return b # return 300
-# print(b) # print 500
-# b=a() #assign b to function a 
-# print(b)# print result of function becuase you reassigned b 
+b = 500 # assign b to 500
+print(b) # print 500
+def a(): #define function a 
+    b = 300 # assign b to 300
+    print(b) # print 300
+    return b # return 300
+print(b) # print 500
+b=a() #assign b to function a 
+print(b)# print result of function becuase you reassigned b 
 
 #                    var | val
 #                    __________
@@ -315,13 +315,13 @@
 
 
 # #14
-# def a(): # define function a 
-#     print(1) # print 1 
-#     b() # call function b 
-#     print(2) # print 2 
-# def b(): # define function b
-#     print(3)# print 3
-# a()# call function a 
+def a(): # define function a 
+    print(1) # print 1 
+    b() # call function b 
+    print(2) # print 2 
+def b(): # define function b
+    print(3)# print 3
+a()# call function a 
 
 
 #                    var | val
