@@ -13,14 +13,12 @@ countdown(num)
 
 # 2) Print and Return - Create a function that will receive a list with two numbers. Print the first value and return the second.
 # Example: print_and_return([1,2]) should print 1 and return 2
-def print_return(num1,num2):
-    print(num1)
-    return num2
-num1 = 1
-num2 = 2
-# print(print_return(num1,num2)))
-print_return(num1,num2
-
+def print_return(arr):
+    print(arr[0])
+    num = arr[1]
+    return num
+arr=[1,2]
+print_return(arr)
 
 
 # 3) First Plus Length - Create a function that accepts a list and returns the sum of the 
