@@ -15,8 +15,16 @@ class Bank:
         return self
     
     def account_ballance(self):
-        print(f'your actual balance is {self.balance}')
+        print(f'{self.name} your actual balance is {self.balance}')
+    
+    def yield_interest(self):
+        self.balance * self.rate
+        print(f'{self.name} your interest return is {self.balance * self.rate}')
+        return self 
 
 
 acct1 = Bank(name="jim",balance=25)
-acct1.withdraw(100).deposit(125).account_ballance()
+acct2 = Bank(name="pam",balance=2500)
+acct1.withdraw(100).deposit(125).deposit(325).deposit(1000).yield_interest().account_ballance()
+
+acct2.withdraw(100).withdraw(100).withdraw(100).withdraw(100).deposit(125).deposit(125).yield_interest().account_ballance()
