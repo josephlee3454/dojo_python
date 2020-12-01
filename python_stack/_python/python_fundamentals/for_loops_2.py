@@ -108,28 +108,28 @@
 #8)  Ultimate Analysis - Create a function that takes a list and returns a dictionary that has the sumTotal, 
 # average, minimum, maximum and length of the list. Example: ultimate_analysis([37,2,1,-9]) should return 
 # {'sumTotal': 31, 'average': 7.75, 'minimum': -9, 'maximum': 37, 'length': 4 }
-# analysis = {}
-# def ultimate_analysis(arr):
-#     min_val = arr[0]
-#     max_val = arr[0]
-#     sum_total = 0 
-#     for i in range(len(arr)):
-#         sum_total = sum_total + arr[i]
-#         if arr[i] > max_val:
-#             max_val = arr[i]
-#         if arr[i] < min_val:
-#             min_val = arr[i]
-#     lengthed = len(arr)
-#     average = sum_total/lengthed 
-#     analysis['sumTotal'] = sum_total 
-#     analysis['average'] = average 
-#     analysis['minimum'] = min_val 
-#     analysis['maximum'] = max_val
-#     analysis['length'] = lengthed
-#     print(analysis)
-#     return analysis
-# arr = [37,2,1,-9]
-# ultimate_analysis(arr)
+analysis = {}
+def ultimate_analysis(arr):
+    min_val = arr[0]
+    max_val = arr[0]
+    sum_total = 0 
+    for i in range(len(arr)):
+        sum_total = sum_total + arr[i]
+        if arr[i] > max_val:
+            max_val = arr[i]
+        if arr[i] < min_val:
+            min_val = arr[i]
+    lengthed = len(arr)
+    average = sum_total/lengthed 
+    analysis['sumTotal'] = sum_total 
+    analysis['average'] = average 
+    analysis['minimum'] = min_val 
+    analysis['maximum'] = max_val
+    analysis['length'] = lengthed
+    print(analysis)
+    return analysis
+arr = [37,2,1,-9]
+ultimate_analysis(arr)
 
 
 
@@ -142,15 +142,15 @@
 
 
 
-def reverse_list(arr):
-    x = len(arr)-1
-    for i in range(len(arr)//2):
-        temp = arr[i]
-        arr[i] = arr[x]
-        arr[x] = temp
-        x = x + -1
-    print(arr)
-    return arr
-arr = [37,2,1,-9]
-reverse_list(arr)
+# def reverse_list(arr):
+#     x = len(arr)-1
+#     for i in range(len(arr)//2):
+#         temp = arr[i]
+#         arr[i] = arr[x]
+#         arr[x] = temp
+#         x = x + -1
+#     print(arr)
+#     return arr
+# arr = [37,2,1,-9]
+# reverse_list(arr)
 
