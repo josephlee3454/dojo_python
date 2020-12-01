@@ -22,9 +22,38 @@ class Bank:
         print(f'{self.name} your interest return is {self.balance * self.rate}')
         return self 
 
+class User:
+    def __init__(self,name,balance):
+        self.name = name
+        self.account = Bank(balance=100,name='name',rate=.01)
+        self.trans_num = 4000
+    
+    def dep(self,amount):
+        self.account.deposit(100)
+        
+    
+    def withd(self,amount):
+        self.account.withdraw(200)
+    
+    def disp(self):
+        self.account.account_ballance()
+        
+    def transfer(self,amt,users):
 
-acct1 = Bank(name="jim",balance=25,rate=.01)
-acct2 = Bank(name="pam",balance=2500,rate=.02)
-acct1.withdraw(100).deposit(125).deposit(325).deposit(1000).yield_interest().account_ballance()
+        print("**********transfers***************")
+        x = self.withdraw(amt)
+        users.dep(amt)
+        # print(users.deposit(amt))
 
-acct2.withdraw(100).withdraw(100).withdraw(100).withdraw(100).deposit(125).deposit(125).yield_interest().account_ballance()
+
+
+
+
+user1 = User(name='lenny', balance=600)
+user2 = User(name="fred", balance=200)
+user3 = User(name="molly", balance=3000)
+
+
+user1.dep(100)
+user2.withd(225)
+user3.disp()

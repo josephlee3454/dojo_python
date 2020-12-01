@@ -44,7 +44,7 @@ class User:
 
 
 
-
+user1 = User(name='lenny', balance=600)
 user2 = User(name="fred", balance=200)
 user3 = User(name="molly", balance=3000)
 
