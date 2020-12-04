@@ -1,0 +1,15 @@
+.head {
+   
+    color: red;
+    background-color: black;
+    width: 400px;
+    height: 100px;
+    margin-left: 39%;
+}
+#h1 {
+    text-align: center;
+}
+header{
+    text-align: center; 
+    color: blue;
+}

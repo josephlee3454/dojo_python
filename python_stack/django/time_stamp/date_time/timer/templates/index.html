@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+
+    <link rel="stylesheet"  href="{% static 'css/style.css' %}">    
+
+    </head>
+
+
+<body>
+    <header class="header">
+    This is the date and the time 
+    </header>
+    <div class="head">
+       <h1 id = "h1"> 
+            {{ today }}
+
+            {{ time }} 
+        </h1>
+    </div>
+</body>
+</html>
