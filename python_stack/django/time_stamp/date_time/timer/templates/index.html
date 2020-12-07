@@ -15,12 +15,31 @@
     <header class="header">
     This is the date and the time 
     </header>
-    <div class="head">
-       <h1 id = "h1"> 
-            {{ today }}
+    <div class="form-div">
+    <form class="form-class" action='/result' method='post'>
+    {% csrf_token %}
+    Your Name: <input type='text' name='name'>
 
-            {{ time }} 
-        </h1>
-    </div>
+    Dojo Location: <select name = "dropdown" >
+        
+        <option value = "San-Jose" >San Jose</option>
+        <option value = "Bellevue">BelleVue</option>
+        <option value = "Boise">Boise</option>
+        <option value = "Chicago">Chicago</option>
+    </select>
+    Favorite Langauge: <select name = "second-dropdown">
+        
+        <option value = "python" selected>Python</option>
+        <option value = "Java">Java</option>
+        <option value = "C#">C# .net</option>
+        <option value = "javascript">JavaScript</option> 
+    Comment (optional) 
+    <textarea name="message" rows="10" cols="50">
+        write your comment here !!! 
+    </textarea>
+    <button type='submit'>submit</button>
+</form>
+</div>
+    
 </body>
 </html>
